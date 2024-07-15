@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price Tiers</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+<style>
+    html {
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+
+
+
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+    line-height: 1;
+    background-color: #ffc8dd;
+    min-height: 150vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.panel {
+    background-color: whitesmoke;
+    border-radius: 5%;
+    padding: 15px 25px;
+    width: 100%;
+    max-width: 670px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 600px;
+    
+
+
+}
+.pricing-plan{
+    border-bottom: 1px gray solid;
+}
+
+.pricing-plan:last-child{
+    border-bottom: none;
+}
+.pricing-img{
+    margin-bottom: 25px;
+    max-width: 100%;
+
+}
+.pricing-header{
+    color: #00b4d8;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.pricing-features{
+    margin:50px 0px 25px;
+    color:#ef476f;
+}
+.pricing-features-item{
+    
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 2em;
+    padding: 15px 0;
+    border-top:  1.2px #e4c1f9 solid;
+}
+.pricing-features-item:last-child{border-bottom: 1.2px #e4c1f9 solid;
+
+}
+
+.pricing-price{
+    display: block;
+    font-size: 37px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 2em;
+    padding: 0 0;
+    color: #e07a5f;
+    
+
+}
+
+.pricing-button{
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border: 1px #e4c1f9 solid ;
+    color: teal;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    text-decoration: none;
+    transition: background-color 200ms ease-in-out;
+    
+}
+.pricing-button:hover{background-color: #ffbf69;}
+.pricing-button.is-featured{
+    background-color: #ffbf69;
+    ;
+}
+
+.pricing-button.is-featured:hover , .pricing-button.is-featured:focus{
+    background-color: #d0f4de;
+    
+}
+
+@media(min-width:770px){ .panel{flex-direction:row;}
+
+.pricing-plan{border: none;
+border-right:  1.2px #e4c1f9 solid;
+padding: 25px;}
+
+.pricing-plan:last-child{border-right: none;}}
+</style>
+</head>
+
+<body>
+    <div class="panel pricing-table"> 
+        <div class="pricing-plan">
+        <img src="icons/icon1.png" alt="" class="pricing-img">
+        <h2 class="pricing-header">Personal</h2>
+        <ul class="pricing-features">
+            <li class="pricing-features-item"> Custom Domains</li>
+            <li class="pricing-features-item">Sleeps after 30 min inactivity</li>
+        </ul>
+        <span class="pricing-price">Free</span>
+    <a href="#" class="pricing-button">Sing up</a>
+    </div>
+
+    
+        <div class="pricing-plan">
+        <img src="icons/icon2.png" alt="" class="pricing-img">
+        <h2 class="pricing-header">Small-Team</h2>
+        <ul class="pricing-features">
+            <li class="pricing-features-item"> Never Sleeps</li>
+            <li class="pricing-features-item">Mutiple workers for more powerful apps</li>
+        </ul>
+        <span class="pricing-price">$100</span>
+    <a href="#" class="pricing-button is-featured">Free Trial</a>
+    </div>
+    <div class="pricing-plan">
+        <img src="icons/icon3.png" alt="" class="pricing-img">
+        <h2 class="pricing-header">Enterprise</h2>
+        <ul class="pricing-features">
+            <li class="pricing-features-item"> Dedicated</li>
+            <li class="pricing-features-item">Simple Horizontal scalability</li>
+        </ul>
+        <span class="pricing-price">$400</span>
+    <a href="#" class="pricing-button">Free Trial</a>
+    </div>
+    </div>
+            
+</body>
+
+</html>
+
